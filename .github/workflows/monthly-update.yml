@@ -39,6 +39,8 @@ jobs:
         with:
           python-version: '3.11'
       - run: pip install -r requirements.txt
+      - name: Verify financial parsing and ratio calculations
+        run: python -m unittest discover -s tests -v
       - name: Require API key for scheduled collection
         if: github.event_name == 'schedule' && env.DART_API_KEY == ''
         run: |
