@@ -2,8 +2,8 @@
 
 # ALTEOGEN · DART Financial Observatory
 
-**대시보드 예정 주소:** https://HSC-Class01.github.io/SI-alteogen/  
-위 주소는 GitHub Pages 배포 성공 후 활성화됩니다. 이 패키지는 코드·배포 준비본이며 API 키 없이 실데이터를 수집하거나 저장소에 배포한 상태는 아닙니다.
+**대시보드:** https://HSC-Class01.github.io/SI-alteogen/  
+GitHub Pages 자동 배포를 구성했습니다. 2026-10-20 최초 갱신에서 DART 보고서 원문 54건과 재무 데이터 86개 기간/기준을 수집했습니다. API 키는 GitHub Actions Secret에만 저장하며 저장소 코드에는 포함하지 않습니다.
 
 ## 시작하기: GitHub 웹 화면 기준
 
