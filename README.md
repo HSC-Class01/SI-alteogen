@@ -13,7 +13,7 @@ GitHub Pages 자동 배포를 구성했습니다. 2026-10-20 최초 갱신에서
 4. **Settings → Pages → Build and deployment → Source: GitHub Actions**를 선택합니다. Pages 메뉴가 없다면 계정 요금제/저장소 공개 범위/조직 정책을 확인하세요.
 5. **Settings → Actions → General**에서 Actions 사용을 허용합니다. workflow job은 데이터 커밋을 위해 `contents: write`를 요청합니다. 조직 정책이나 기본 브랜치 보호규칙으로 봇 push가 금지되어 있으면 관리자에게 봇 쓰기 권한을 허용받아야 합니다. `main` 이름을 코드에 하드코딩하지 않고 기본 브랜치 checkout을 사용합니다.
 6. **Actions → DART monthly update and Pages → Run workflow**에서 기본 브랜치를 선택하고 최초에는 `full_refresh=true`로 실행하세요. workflow 파일은 이번 변경에서 저장소에 추가했습니다. 초회 실행은 전체 원문·API 수집으로 오래 걸릴 수 있습니다. 성공하면 `data`와 `site/index.html`이 커밋되고 Pages가 배포됩니다. 실패하면 기존 배포 화면은 유지됩니다.
-7. 저장소 오른쪽 **About → 톱니바퀴 → Website**에 `https://HSC-Class01.github.io/SI-alteogen/`를 입력하고 저장합니다. 저장소 쓰기/관리 권한이 필요합니다. README 최상단 배지는 이미 같은 주소를 가리킵니다. 사용자 첨부 배지 이미지를 받지 못해 기본 SVG 배지를 제공했습니다. 원하는 이미지로 `site/assets/dashboard-badge.svg`와 README 이미지 경로를 교체할 수 있습니다.
+7. 저장소 오른쪽 **About** Website에 `https://HSC-Class01.github.io/SI-alteogen/`를 설정했습니다. README 최상단 배지는 이미 같은 주소를 가리킵니다. 사용자 첨부 배지 이미지를 받지 못해 기본 SVG 배지를 제공했습니다. 원하는 이미지로 `site/assets/dashboard-badge.svg`와 README 이미지 경로를 교체할 수 있습니다.
 
 ## 자동 갱신
 
@@ -59,8 +59,8 @@ Open DART 전체 재무제표 API는 **2015년부터** 제공합니다. 따라�
 ## 폴더 구조
 
 ```
-src/agent.py                 수집, 증분 갱신, 계정 정규화, 비율 계산
-src/build_site.py            데이터 내장 HTML 생성
+agent.py                     수집, 증분 갱신, 계정 정규화, 비율 계산
+build_site.py                데이터 내장 HTML 생성
 config/metrics.json         표준 계정 매핑
 config/peers.json            비교기업과 선정 근거
 automation/monthly-update.yml  업로드 가능한 워크플로우 원본
