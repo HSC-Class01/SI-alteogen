@@ -1,6 +1,6 @@
 import json, shutil
 from pathlib import Path
-ROOT=Path(__file__).resolve().parents[1]
+ROOT=Path(__file__).resolve().parent
 def build():
     data={name:json.loads((ROOT/f'data/{name}.json').read_text(encoding='utf-8')) for name in ('financials','status','coverage')}
     data['metrics']=json.loads((ROOT/'config/metrics.json').read_text(encoding='utf-8'))
