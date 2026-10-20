@@ -64,8 +64,7 @@ jobs:
           git add data site/index.html
           if ! git diff --cached --quiet; then
             git commit -m "chore: refresh DART financial data"
-            git fetch origin main
-            git rebase origin/main
+            git pull --rebase -X theirs origin main
             git push
           fi
       - uses: actions/upload-pages-artifact@v3
