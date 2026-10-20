@@ -1,1 +1,302 @@
-[]
+[
+  {
+    "year": 2010,
+    "code": "11011",
+    "basis": "CFS",
+    "status": "legacy_manual_required"
+  },
+  {
+    "year": 2010,
+    "code": "11011",
+    "basis": "OFS",
+    "status": "legacy_manual_required"
+  },
+  {
+    "year": 2010,
+    "code": "11012",
+    "basis": "CFS",
+    "status": "legacy_manual_required"
+  },
+  {
+    "year": 2010,
+    "code": "11012",
+    "basis": "OFS",
+    "status": "legacy_manual_required"
+  },
+  {
+    "year": 2010,
+    "code": "11013",
+    "basis": "CFS",
+    "status": "legacy_manual_required"
+  },
+  {
+    "year": 2010,
+    "code": "11013",
+    "basis": "OFS",
+    "status": "legacy_manual_required"
+  },
+  {
+    "year": 2010,
+    "code": "11014",
+    "basis": "CFS",
+    "status": "legacy_manual_required"
+  },
+  {
+    "year": 2010,
+    "code": "11014",
+    "basis": "OFS",
+    "status": "legacy_manual_required"
+  },
+  {
+    "year": 2011,
+    "code": "11011",
+    "basis": "CFS",
+    "status": "legacy_manual_required"
+  },
+  {
+    "year": 2011,
+    "code": "11011",
+    "basis": "OFS",
+    "status": "legacy_manual_required"
+  },
+  {
+    "year": 2011,
+    "code": "11012",
+    "basis": "CFS",
+    "status": "legacy_manual_required"
+  },
+  {
+    "year": 2011,
+    "code": "11012",
+    "basis": "OFS",
+    "status": "legacy_manual_required"
+  },
+  {
+    "year": 2011,
+    "code": "11013",
+    "basis": "CFS",
+    "status": "legacy_manual_required"
+  },
+  {
+    "year": 2011,
+    "code": "11013",
+    "basis": "OFS",
+    "status": "legacy_manual_required"
+  },
+  {
+    "year": 2011,
+    "code": "11014",
+    "basis": "CFS",
+    "status": "legacy_manual_required"
+  },
+  {
+    "year": 2011,
+    "code": "11014",
+    "basis": "OFS",
+    "status": "legacy_manual_required"
+  },
+  {
+    "year": 2012,
+    "code": "11011",
+    "basis": "CFS",
+    "status": "legacy_manual_required"
+  },
+  {
+    "year": 2012,
+    "code": "11011",
+    "basis": "OFS",
+    "status": "legacy_manual_required"
+  },
+  {
+    "year": 2012,
+    "code": "11012",
+    "basis": "CFS",
+    "status": "legacy_manual_required"
+  },
+  {
+    "year": 2012,
+    "code": "11012",
+    "basis": "OFS",
+    "status": "legacy_manual_required"
+  },
+  {
+    "year": 2012,
+    "code": "11013",
+    "basis": "CFS",
+    "status": "legacy_manual_required"
+  },
+  {
+    "year": 2012,
+    "code": "11013",
+    "basis": "OFS",
+    "status": "legacy_manual_required"
+  },
+  {
+    "year": 2012,
+    "code": "11014",
+    "basis": "CFS",
+    "status": "legacy_manual_required"
+  },
+  {
+    "year": 2012,
+    "code": "11014",
+    "basis": "OFS",
+    "status": "legacy_manual_required"
+  },
+  {
+    "year": 2013,
+    "code": "11011",
+    "basis": "CFS",
+    "status": "legacy_manual_required"
+  },
+  {
+    "year": 2013,
+    "code": "11011",
+    "basis": "OFS",
+    "status": "legacy_manual_required"
+  },
+  {
+    "year": 2013,
+    "code": "11012",
+    "basis": "CFS",
+    "status": "legacy_manual_required"
+  },
+  {
+    "year": 2013,
+    "code": "11012",
+    "basis": "OFS",
+    "status": "legacy_manual_required"
+  },
+  {
+    "year": 2013,
+    "code": "11013",
+    "basis": "CFS",
+    "status": "legacy_manual_required"
+  },
+  {
+    "year": 2013,
+    "code": "11013",
+    "basis": "OFS",
+    "status": "legacy_manual_required"
+  },
+  {
+    "year": 2013,
+    "code": "11014",
+    "basis": "CFS",
+    "status": "legacy_manual_required"
+  },
+  {
+    "year": 2013,
+    "code": "11014",
+    "basis": "OFS",
+    "status": "legacy_manual_required"
+  },
+  {
+    "year": 2014,
+    "code": "11011",
+    "basis": "CFS",
+    "status": "legacy_manual_required"
+  },
+  {
+    "year": 2014,
+    "code": "11011",
+    "basis": "OFS",
+    "status": "legacy_manual_required"
+  },
+  {
+    "year": 2014,
+    "code": "11012",
+    "basis": "CFS",
+    "status": "legacy_manual_required"
+  },
+  {
+    "year": 2014,
+    "code": "11012",
+    "basis": "OFS",
+    "status": "legacy_manual_required"
+  },
+  {
+    "year": 2014,
+    "code": "11013",
+    "basis": "CFS",
+    "status": "legacy_manual_required"
+  },
+  {
+    "year": 2014,
+    "code": "11013",
+    "basis": "OFS",
+    "status": "legacy_manual_required"
+  },
+  {
+    "year": 2014,
+    "code": "11014",
+    "basis": "CFS",
+    "status": "legacy_manual_required"
+  },
+  {
+    "year": 2014,
+    "code": "11014",
+    "basis": "OFS",
+    "status": "legacy_manual_required"
+  },
+  {
+    "year": 2015,
+    "code": "11012",
+    "basis": "CFS",
+    "status": "not_available"
+  },
+  {
+    "year": 2015,
+    "code": "11012",
+    "basis": "OFS",
+    "status": "not_available"
+  },
+  {
+    "year": 2015,
+    "code": "11013",
+    "basis": "CFS",
+    "status": "not_available"
+  },
+  {
+    "year": 2015,
+    "code": "11013",
+    "basis": "OFS",
+    "status": "not_available"
+  },
+  {
+    "year": 2015,
+    "code": "11014",
+    "basis": "CFS",
+    "status": "not_available"
+  },
+  {
+    "year": 2015,
+    "code": "11014",
+    "basis": "OFS",
+    "status": "not_available"
+  },
+  {
+    "year": 2026,
+    "code": "11011",
+    "basis": "CFS",
+    "status": "not_available"
+  },
+  {
+    "year": 2026,
+    "code": "11011",
+    "basis": "OFS",
+    "status": "not_available"
+  },
+  {
+    "year": 2026,
+    "code": "11014",
+    "basis": "CFS",
+    "status": "not_available"
+  },
+  {
+    "year": 2026,
+    "code": "11014",
+    "basis": "OFS",
+    "status": "not_available"
+  }
+]
