@@ -1,5 +1,15 @@
 name: DART monthly update and Pages
 on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/monthly-update.yml'
+      - 'agent.py'
+      - 'build_site.py'
+      - 'requirements.txt'
+      - 'config/**'
+      - 'automation/**'
+      - 'site/template.html'
   workflow_dispatch:
     inputs:
       full_refresh:
@@ -19,6 +29,8 @@ concurrency:
 jobs:
   collect-and-build:
     runs-on: ubuntu-latest
+    env:
+      DART_API_KEY: ${{ secrets.DART_API_KEY }}
     steps:
       - uses: actions/checkout@v4
         with:
@@ -27,17 +39,23 @@ jobs:
         with:
           python-version: '3.11'
       - run: pip install -r requirements.txt
+      - name: Require API key for scheduled collection
+        if: github.event_name == 'schedule' && env.DART_API_KEY == ''
+        run: |
+          echo "DART_API_KEY repository secret is required for scheduled collection." >&2
+          exit 1
       - name: Collect DART filings and financials
-        env:
-          DART_API_KEY: ${{ secrets.DART_API_KEY }}
+        if: env.DART_API_KEY != ''
         run: |
           if [ "${{ inputs.full_refresh }}" = "true" ]; then
             python agent.py --full
           else
             python agent.py
           fi
-      - run: python build_site.py
+      - name: Build dashboard
+        run: python build_site.py
       - name: Commit refreshed data and dashboard
+        if: env.DART_API_KEY != ''
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
