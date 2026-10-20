@@ -1,0 +1,170 @@
+{
+  "revenue": {
+    "label": "매출액",
+    "ids": [
+      "ifrs-full_Revenue",
+      "ifrs-full_RevenueFromContractsWithCustomers"
+    ],
+    "names": [
+      "매출액",
+      "수익(매출액)"
+    ],
+    "statements": [
+      "IS",
+      "CIS"
+    ],
+    "type": "income"
+  },
+  "operating_profit": {
+    "label": "영업이익",
+    "ids": [
+      "dart_OperatingIncomeLoss",
+      "ifrs-full_ProfitLossFromOperatingActivities"
+    ],
+    "names": [
+      "영업이익",
+      "영업이익(손실)"
+    ],
+    "statements": [
+      "IS",
+      "CIS"
+    ],
+    "type": "income"
+  },
+  "net_income": {
+    "label": "당기순이익",
+    "ids": [
+      "ifrs-full_ProfitLoss",
+      "dart_ProfitLoss"
+    ],
+    "names": [
+      "당기순이익",
+      "당기순이익(손실)"
+    ],
+    "statements": [
+      "IS",
+      "CIS"
+    ],
+    "type": "income"
+  },
+  "assets": {
+    "label": "자산",
+    "ids": [
+      "ifrs-full_Assets"
+    ],
+    "names": [
+      "자산총계"
+    ],
+    "statements": [
+      "BS"
+    ],
+    "type": "balance"
+  },
+  "liabilities": {
+    "label": "부채",
+    "ids": [
+      "ifrs-full_Liabilities"
+    ],
+    "names": [
+      "부채총계"
+    ],
+    "statements": [
+      "BS"
+    ],
+    "type": "balance"
+  },
+  "equity": {
+    "label": "자본",
+    "ids": [
+      "ifrs-full_Equity"
+    ],
+    "names": [
+      "자본총계"
+    ],
+    "statements": [
+      "BS"
+    ],
+    "type": "balance"
+  },
+  "current_assets": {
+    "label": "유동자산",
+    "ids": [
+      "ifrs-full_CurrentAssets"
+    ],
+    "names": [
+      "유동자산"
+    ],
+    "statements": [
+      "BS"
+    ],
+    "type": "balance"
+  },
+  "current_liabilities": {
+    "label": "유동부채",
+    "ids": [
+      "ifrs-full_CurrentLiabilities"
+    ],
+    "names": [
+      "유동부채"
+    ],
+    "statements": [
+      "BS"
+    ],
+    "type": "balance"
+  },
+  "cash": {
+    "label": "현금및현금성자산",
+    "ids": [
+      "ifrs-full_CashAndCashEquivalents"
+    ],
+    "names": [
+      "현금및현금성자산"
+    ],
+    "statements": [
+      "BS"
+    ],
+    "type": "balance"
+  },
+  "operating_cashflow": {
+    "label": "영업활동현금흐름",
+    "ids": [
+      "ifrs-full_CashFlowsFromUsedInOperatingActivities"
+    ],
+    "names": [
+      "영업활동현금흐름",
+      "영업활동으로 인한 현금흐름"
+    ],
+    "statements": [
+      "CF"
+    ],
+    "type": "cashflow"
+  },
+  "investing_cashflow": {
+    "label": "투자활동현금흐름",
+    "ids": [
+      "ifrs-full_CashFlowsFromUsedInInvestingActivities"
+    ],
+    "names": [
+      "투자활동현금흐름",
+      "투자활동으로 인한 현금흐름"
+    ],
+    "statements": [
+      "CF"
+    ],
+    "type": "cashflow"
+  },
+  "financing_cashflow": {
+    "label": "재무활동현금흐름",
+    "ids": [
+      "ifrs-full_CashFlowsFromUsedInFinancingActivities"
+    ],
+    "names": [
+      "재무활동현금흐름",
+      "재무활동으로 인한 현금흐름"
+    ],
+    "statements": [
+      "CF"
+    ],
+    "type": "cashflow"
+  }
+}
