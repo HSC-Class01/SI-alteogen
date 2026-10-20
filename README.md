@@ -7,12 +7,12 @@
 
 ## 시작하기: GitHub 웹 화면 기준
 
-1. ZIP을 해제하고 **내용물**을 `HSC-Class01/SI-alteogen` 저장소 루트에 업로드합니다. 프로젝트를 상위 폴더 안에 넣지 마세요. `README.md`, `src`, `config`, `automation`, `site`, `data`, `tests`, `requirements.txt`가 루트에 있어야 합니다.
-2. ZIP에는 숨김 파일/폴더가 없습니다. GitHub Actions가 인식하려면 `.github/workflows/monthly-update.yml`이 **반드시** 필요합니다. GitHub에서 **Add file → Create new file**을 누르고 파일 이름에 `.github/workflows/monthly-update.yml`을 정확히 입력합니다. 업로드된 `automation/monthly-update.yml`의 **전체 내용을 그대로 복사**해서 붙여넣고 기본 브랜치에 커밋하세요. 숨김 폴더를 드래그해서 업로드할 필요가 없습니다.
+1. ZIP을 해제하고 **내용물**을 `HSC-Class01/SI-alteogen` 저장소 루트에 업로드합니다. `README.md`, `agent.py`, `build_site.py`, `config`, `automation`, `site`, `data`, `requirements.txt`가 루트에 있어야 합니다. `.github` 같은 숨김 경로는 ZIP에 포함하지 않습니다.
+2. 저장소에는 `.github/workflows/monthly-update.yml`을 이미 추가했습니다. ZIP에도 같은 워크플로우 원본이 `automation/monthly-update.yml`로 포함됩니다. 기존 파일을 교체하거나 다른 저장소에 설치할 때 GitHub에서 **Add file → Create new file**로 `.github/workflows/monthly-update.yml`을 만든 뒤 원본 내용을 붙여넣으세요.
 3. Open DART에서 회원가입 후 API 인증키를 신청합니다. 키는 40자리입니다. **소스 코드에 키를 붙여넣지 마세요.** 저장소 **Settings → Secrets and variables → Actions → New repository secret**에서 이름을 `DART_API_KEY`, 값에 인증키를 입력합니다. 이 키를 Issues/README/공개 대화에 올리지 마세요.
 4. **Settings → Pages → Build and deployment → Source: GitHub Actions**를 선택합니다. Pages 메뉴가 없다면 계정 요금제/저장소 공개 범위/조직 정책을 확인하세요.
 5. **Settings → Actions → General**에서 Actions 사용을 허용합니다. workflow job은 데이터 커밋을 위해 `contents: write`를 요청합니다. 조직 정책이나 기본 브랜치 보호규칙으로 봇 push가 금지되어 있으면 관리자에게 봇 쓰기 권한을 허용받아야 합니다. `main` 이름을 코드에 하드코딩하지 않고 기본 브랜치 checkout을 사용합니다.
-6. **Actions → DART monthly update and Pages → Run workflow**에서 기본 브랜치를 선택하고 최초에는 `full_refresh=true`로 실행하세요. 초회 실행은 전체 원문·API 수집으로 오래 걸릴 수 있습니다. 성공하면 `data`와 `site/index.html`이 커밋되고 Pages가 배포됩니다. 실패하면 기존 배포 화면은 유지됩니다.
+6. **Actions → DART monthly update and Pages → Run workflow**에서 기본 브랜치를 선택하고 최초에는 `full_refresh=true`로 실행하세요. workflow 파일은 이번 변경에서 저장소에 추가했습니다. 초회 실행은 전체 원문·API 수집으로 오래 걸릴 수 있습니다. 성공하면 `data`와 `site/index.html`이 커밋되고 Pages가 배포됩니다. 실패하면 기존 배포 화면은 유지됩니다.
 7. 저장소 오른쪽 **About → 톱니바퀴 → Website**에 `https://HSC-Class01.github.io/SI-alteogen/`를 입력하고 저장합니다. 저장소 쓰기/관리 권한이 필요합니다. README 최상단 배지는 이미 같은 주소를 가리킵니다. 사용자 첨부 배지 이미지를 받지 못해 기본 SVG 배지를 제공했습니다. 원하는 이미지로 `site/assets/dashboard-badge.svg`와 README 이미지 경로를 교체할 수 있습니다.
 
 ## 자동 갱신
@@ -86,8 +86,8 @@ Python 3.11 이상. API 키를 환경변수에 넣되 명령 기록에 민감정
 ```bash
 python -m pip install -r requirements.txt
 python -m unittest discover -s tests -v
-python src/agent.py --full
-python src/build_site.py
+python agent.py --full
+python build_site.py
 python automation/install_workflow.py
 ```
 
