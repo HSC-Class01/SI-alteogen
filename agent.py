@@ -5,7 +5,7 @@ from pathlib import Path
 import xml.etree.ElementTree as ET
 import requests
 
-ROOT = Path(__file__).resolve().parents[1]
+ROOT = Path(__file__).resolve().parent
 BASE = 'https://opendart.fss.or.kr/api/'
 CODES = {'11011': 'annual', '11012': 'Half-year', '11013': 'quarterly', '11014': 'quarterly'}
 MONTH_CODE = {'12':'11011', '06':'11012', '03':'11013', '09':'11014'}
